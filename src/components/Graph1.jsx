@@ -25,28 +25,28 @@ const margin = {
 
 
 //CREATE FUNCTIONS TO MAP DATA 
-const date = d => new Date(d.dt_txt); 
-const ny = d => d.main['temp_max'] ;
-const sf = d => d.main['temp_min']- 1 ;
+const date = d => new Date(d.dt_txt);
+const ny = d => d.main['temp_max'];
+const sf = d => d.main['temp_min'] - 1;
 
 
 
 
-export default function Theshold({ data  }) {
+export default function Theshold({ data }) {
 
 
-  
-// SCALES
-const xScale = scaleTime({
-  domain: [Math.min(...data.map(date)), Math.max(...data.map(date))]
-});
-const yScale = scaleLinear({
-  domain: [
-    Math.min(...data.map(d => Math.min(ny(d), sf(d)))),
-    Math.max(...data.map(d => Math.max(ny(d), sf(d)))) 
-  ],
-  nice: true
-});
+
+  // SCALES
+  const xScale = scaleTime({
+    domain: [Math.min(...data.map(date)), Math.max(...data.map(date))]
+  });
+  const yScale = scaleLinear({
+    domain: [
+      Math.min(...data.map(d => Math.min(ny(d), sf(d)))),
+      Math.max(...data.map(d => Math.max(ny(d), sf(d))))
+    ],
+    nice: true
+  });
 
   // BOUNDS
   const xMax = width - margin.left - margin.right;
@@ -64,9 +64,9 @@ const yScale = scaleLinear({
           <GridColumns scale={xScale} width={xMax} height={yMax} stroke="#e0e0e0" />
           <line x1={xMax} x2={xMax} y1={0} y2={yMax} stroke="#e0e0e0" />
           <AxisBottom top={yMax} scale={xScale} numTicks={width > 520 ? 10 : 5} />
-          <AxisLeft scale={yScale}  />
+          <AxisLeft scale={yScale} />
           <text x="-70" y="15" transform="rotate(-90)" fontSize={10}>
-            Temperature (°F)
+            Temperature (°K)
           </text>
           <Threshold
             data={data}
@@ -77,7 +77,7 @@ const yScale = scaleLinear({
             clipBelowTo={yMax}
             curve={curveBasis}
             belowAreaProps={{
-              fill:  'green',
+              fill: 'green',
               fillOpacity: 0.4
             }}
             aboveAreaProps={{
@@ -93,7 +93,7 @@ const yScale = scaleLinear({
             stroke="#000"
             strokeWidth={1.5}
           />
-           <LinePath
+          <LinePath
             data={data}
             curve={curveBasis}
             x={d => xScale(date(d))}
