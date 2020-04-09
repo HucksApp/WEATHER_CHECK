@@ -1,0 +1,51 @@
+.home{
+height: 100vh;
+background: url('../background/back_n.gif') no-repeat ;
+background-size: cover;
+color: #fff;
+margin-bottom: 30px;
+font-weight: bolder;
+border: solid thin rgb(40,165,154);
+border-top-width: 10px ;
+
+}
+
+.home input{
+    color: #fff
+}
+.browser-default{
+    width: 200px;
+    background: inherit;
+    color: #fff;
+}
+
+.form_inputs,.browser-default{
+   margin-left: 20%;
+   margin-right: 20%;
+}
+
+.get_date{
+    display: flex;
+    justify-content: center;
+}
+
+.get_date > *{
+    margin: 10px
+}
+
+
+
+.help{
+    position: absolute;
+    right: 10px;
+    top: 20px
+   
+}
+
+.browser-default:hover {
+    cursor: pointer;
+}
+.help:hover{
+    cursor: pointer;
+    opacity: 0.6; 
+}

@@ -1,0 +1,24 @@
+.contain_b, .contain_l{
+   margin: 100px auto;
+   color: #fff;
+
+}
+
+.b_cover{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+    
+}
+
+.inlet{
+    margin-bottom: 80px;
+    background-color: rgb(137,138,137);
+    color: #fff;
+    height: 150px;
+    padding: 30px;
+   border-radius: 5px;
+}
+

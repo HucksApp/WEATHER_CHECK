@@ -1,0 +1,9 @@
+.error {
+    background: url('../background/404.gif') no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(137,138,137);
+}
+

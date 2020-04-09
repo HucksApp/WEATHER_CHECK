@@ -1,0 +1,10 @@
+.g_cov{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.graph_root{
+    margin: 50px auto;
+}
