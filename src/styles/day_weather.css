@@ -1,21 +1,21 @@
-.card_content{
+.card_content {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 10px;
 }
 
-
-.card_cover{
-    background-color: rgb(137,138,137);
+.card_cover {
+    background-color: rgb(137, 138, 137);
     color: #fff;
     min-width: 40%;
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0 ,0.1);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
-.card_content div{
+
+.card_content div {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -23,82 +23,84 @@
     width: 100%;
 }
 
-.card_content div:last-child{
+.card_content div:last-child {
     padding-left: 10px;
 }
 
-.card_title_d{
+.card_title_d {
     font-weight: bolder;
     font-size: 13px;
 }
-.card_tittle_cover{
+
+.card_tittle_cover {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.card_content div span{
-    display: flex;
-    justify-content: space-between;
-}
-.card_content div span p {
+.card_content div span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card_content div span p {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 60px;
     min-width: 70px;
-    height: 30px;
     
 }
 
-.card_content  div span p:first-child{
+.card_content div span p:first-child {
     font-weight: bolder;
     margin-right: 8px;
     font-size: 13px;
 }
 
-.day_weather{
+.day_weather {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 }
 
-.w_icon{
+.w_icon {
     height: 50px;
     width: 50px;
     margin-top: 10px;
 }
 
-.bntgraph{
+.bntgraph {
     margin-top: 20px;
 }
 
-.bntgraph:hover{
+.bntgraph:hover {
     opacity: 0.3;
     cursor: pointer;
 }
 
-.graph_root{
+.graph_root {
     height: 100vh;
 }
 
-.hour_head{
-    color: rgb(29,154,230);
+.hour_head {
+    color: rgb(29, 154, 230);
     font-weight: bolder;
 }
 
-
-.h_btn{
+.h_btn {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
 }
+
 .h_btn i {
-    margin-left:10px ;
-   
+    margin-left: 10px;
 }
 
-.h_btn h5{
-    color: rgb(40,164,154);
+.h_btn h5 {
+    color: rgb(40, 164, 154);
 }
