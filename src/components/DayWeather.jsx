@@ -46,7 +46,6 @@ const DayWeather = (props) => {
 
         dayAlpha = dayArray[dNum];
         start++;
-        console.log(start)
         if (start === 7) {
             start = 0
         };

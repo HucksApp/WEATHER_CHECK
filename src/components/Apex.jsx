@@ -102,9 +102,7 @@ class Apex extends Component {
 
                     const arrangedData = sorter(response.data)
                     let copyData2 = { ...this.state.data };
-                    console.log(response)
                     arrangedData.genDays = arrangedData.genDays.slice(0, days);
-                    console.log(arrangedData)
                     copyData2.arrangedData = arrangedData;
                     this.setState({
                         data: copyData2
