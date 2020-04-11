@@ -100,10 +100,11 @@ class Apex extends Component {
             axios.get('https://api.openweathermap.org/data/2.5/forecast?q=' + city + ',' + state + ',' + country + '&appid=a40c698729d41a0ff59b01fed9b87d45')
                 .then((response) => {
 
-                    const arrangedData = sorter(response.data, days)
+                    const arrangedData = sorter(response.data)
                     let copyData2 = { ...this.state.data };
+                    console.log(response)
                     arrangedData.genDays = arrangedData.genDays.slice(0, days);
-
+                    console.log(arrangedData)
                     copyData2.arrangedData = arrangedData;
                     this.setState({
                         data: copyData2

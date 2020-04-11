@@ -42,11 +42,12 @@ const DayWeather = (props) => {
     //CONVERT DATE TO WORDS WHILE LOOPING
 
     const dayForcast = props.daysForcast.map((dayForcast) => {
-        let dNum = start
+        let dNum = start;
 
-        dayAlpha = dayArray[dNum]
-        start++
-        if (start === 6) {
+        dayAlpha = dayArray[dNum];
+        start++;
+        console.log(start)
+        if (start === 7) {
             start = 0
         };
 
