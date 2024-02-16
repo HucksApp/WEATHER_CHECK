@@ -3,8 +3,11 @@
 ### Description
 
 it presents a week weather forcast for a  given city, state and country
+
 provides temperature graph for the week weather forcast
+
 it privides hourly weather forcast for a  selected day
+
 provides temperature graph for hourly forcast for the selected day
 
 
