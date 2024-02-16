@@ -11,4 +11,4 @@ it presents hourly weather forcast for a  selected day
 presents temperature graph for hourly forcast for the selected day
 
 
-it is hosted on fire base at ⟹ [https://weather-check-9a116.firebaseapp.com/]
+it is hosted on firebase at ⟹ [https://weather-check-9a116.firebaseapp.com/]
